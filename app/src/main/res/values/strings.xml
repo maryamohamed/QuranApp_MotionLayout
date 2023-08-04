@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">QuranApp_MotionLayout</string>
+    <string name="quran_app">القرآن الكريم</string>
+    <string name="surah_name">الفاتحة</string>
+    <string name="reader_name">ناصر القطامي</string>
+    <string name="reader_photo">Reader Photo</string>
+    <string name="pause_icon">Pause Icon</string>
+    <string name="go_backward_15sec">Go Backward 15sec</string>
+    <string name="go_forward_15sec">Go Forward 15sec</string>
+    <string name="previous_surah">Previous Surah</string>
+    <string name="next_surah">Next Surah</string>
+</resources>
