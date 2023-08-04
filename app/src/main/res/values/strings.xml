@@ -1,7 +1,36 @@
 <resources>
     <string name="app_name">QuranApp_MotionLayout</string>
     <string name="quran_app">القرآن الكريم</string>
-    <string name="surah_name">الفاتحة</string>
+    <string name="surah_name1">الفاتحة</string>
+    <string name="surah_name2">البقرة</string>
+    <string name="surah_name3">آل عمران</string>
+    <string name="surah_name4">النساء</string>
+    <string name="surah_name5">المائدة</string>
+    <string name="surah_name6">الأنعام</string>
+    <string name="surah_name7">الأعراف</string>
+    <string name="surah_name8">الأنفال</string>
+    <string name="surah_name9">التوبة</string>
+    <string name="surah_name10">يونس</string>
+    <string name="surah_name11">هود</string>
+    <string name="surah_name12"> يوسف</string>
+    <string name="surah_name13">الرعد</string>
+    <string name="surah_name14">ابراهيم</string>
+    <string name="surah_name15">الحجر</string>
+    <string name="surah_name16">النحل</string>
+    <string name="surah_name17">الإسراء</string>
+    <string name="surah_name18">الكهف</string>
+    <string name="surah_name19">مريم</string>
+    <string name="surah_name20">طه</string>
+    <string name="surah_name21">الأنبياء</string>
+    <string name="surah_name22">الحج</string>
+    <string name="surah_name23">المؤمنون</string>
+    <string name="surah_name24">النور</string>
+    <string name="surah_name25">الفرقان</string>
+    <string name="surah_name26">الشعراء</string>
+    <string name="surah_name27">النمل</string>
+    <string name="surah_name28">القصص</string>
+    <string name="surah_name29">العنكبوت</string>
+    <string name="surah_name30">الروم</string>
     <string name="reader_name">ناصر القطامي</string>
     <string name="reader_photo">Reader Photo</string>
     <string name="pause_icon">Pause Icon</string>
@@ -9,4 +38,5 @@
     <string name="go_forward_15sec">Go Forward 15sec</string>
     <string name="previous_surah">Previous Surah</string>
     <string name="next_surah">Next Surah</string>
+    <string name="index">الفهرس</string>
 </resources>

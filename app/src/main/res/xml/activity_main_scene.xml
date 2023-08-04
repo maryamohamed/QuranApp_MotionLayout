@@ -9,7 +9,7 @@
         motion:duration="1000">
        <KeyFrameSet>
            <KeyAttribute
-               motion:motionTarget="@+id/quran_app_text"
+               motion:motionTarget="@+id/names"
                motion:framePosition="0"
                android:alpha="0" />
            <KeyAttribute
@@ -29,7 +29,10 @@
                motion:framePosition="2"
                android:alpha="0.1" />
        </KeyFrameSet>
-        <OnSwipe motion:touchAnchorId="@+id/secondaryConstraint" />
+       <OnSwipe motion:dragDirection="dragDown"
+         motion:touchAnchorId="@id/secondaryConstraint"
+         motion:touchAnchorSide="top"/>
+        <OnClick motion:targetId="@+id/secondaryConstraint" />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
@@ -73,17 +76,6 @@
             motion:layout_editor_absoluteY="38dp"
             android:layout_marginTop="40dp" />
         <Constraint
-            android:id="@+id/quran_app_text"
-            motion:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/margin16"
-            motion:layout_constraintTop_toTopOf="parent"
-            motion:layout_constraintHorizontal_bias="0.736"
-            motion:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="100dp"
-            android:visibility="visible" />
-        <Constraint
             android:id="@+id/surah_name"
             motion:layout_constraintStart_toEndOf="@+id/quran_image"
             android:layout_width="0dp"
@@ -112,7 +104,7 @@
             motion:layout_constraintStart_toStartOf="parent" />
 
         <Constraint
-            android:id="@+id/quran_app_text"
+            android:id="@+id/names"
             motion:layout_constraintEnd_toEndOf="parent"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
@@ -125,7 +117,7 @@
         <Constraint
             android:id="@+id/quran_image"
             android:layout_width="300dp"
-            android:layout_height="300dp"
+            android:layout_height="500dp"
             motion:layout_constraintBottom_toTopOf="@id/surah_name"
             android:layout_marginBottom="32dp"
             motion:layout_constraintTop_toTopOf="@+id/primaryConstraint"

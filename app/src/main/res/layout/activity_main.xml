@@ -11,36 +11,136 @@
         android:id="@+id/primaryConstraint"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/primaryBackgroundColor"
+        android:background="@color/primaryColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/quran_app_text"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="@dimen/margin16"
-        android:gravity="start"
-        android:text="@string/quran_app"
-        android:textColor="@color/white"
-        android:textSize="100sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.736"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <ScrollView
+            android:id="@+id/names"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin16"
+            android:text="@string/quran_app"
+            android:textColor="@color/white"
+            android:textSize="@dimen/quran_app_text_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/primaryConstraint"
+            app:layout_constraintHorizontal_bias="0.715"
+            app:layout_constraintBottom_toTopOf="@id/secondaryConstraint"
+            app:layout_constraintStart_toStartOf="@id/primaryConstraint"
+            app:layout_constraintTop_toBottomOf="@id/index" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin64"
+                android:orientation="vertical">
+
+                <TextView
+            style="@style/Names"
+                    android:layout_marginTop="40dp"
+            android:text="@string/surah_name1"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name2"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name3"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name4"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name5"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name6"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name7"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name8"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name9"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name10"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name11"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name12"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name13"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name14"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name15"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name16"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name17"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name18"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name19"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name20"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name21"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name22"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name23"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name24"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name25"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name26"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name27"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name28"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name29"/>
+            <TextView
+            style="@style/Names"
+            android:text="@string/surah_name30"/>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/secondaryConstraint"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="@color/secondaryBackgroundColor"
+        android:layout_height="@dimen/secondaryConstraintHeight"
+        android:background="@color/secondaryColor"
+        app:layout_constraintTop_toBottomOf="@id/names"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -49,8 +149,8 @@
 
     <ImageView
         android:id="@+id/quran_image"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="@dimen/readerImageWidthAndHeight"
+        android:layout_height="@dimen/readerImageWidthAndHeight"
         android:layout_marginStart="@dimen/margin16"
         android:layout_marginTop="@dimen/margin16"
         android:layout_marginBottom="@dimen/margin16"
@@ -63,8 +163,8 @@
 
     <ImageView
         android:id="@+id/ic_pause"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:layout_width="@dimen/pauseIconWidthAndHeight"
+        android:layout_height="@dimen/pauseIconWidthAndHeight"
         android:layout_marginTop="@dimen/margin24"
         android:contentDescription="@string/pause_icon"
         app:layout_constraintEnd_toStartOf="@+id/ic_15sec_forward"
@@ -75,9 +175,7 @@
 
     <ImageView
         android:id="@+id/ic_15sec_backward"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        style="@style/Icons"
         android:contentDescription="@string/go_backward_15sec"
         app:layout_constraintEnd_toStartOf="@+id/ic_pause"
         app:layout_constraintStart_toEndOf="@+id/ic_fast_backward"
@@ -87,9 +185,7 @@
 
     <ImageView
         android:id="@+id/ic_15sec_forward"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        style="@style/Icons"
         android:contentDescription="@string/go_forward_15sec"
         app:layout_constraintEnd_toStartOf="@+id/ic_fast_forward"
         app:layout_constraintStart_toEndOf="@+id/ic_pause"
@@ -101,11 +197,11 @@
         android:id="@+id/surah_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="@dimen/margin24"
+        android:layout_marginTop="@dimen/margin24"
         android:gravity="center"
-        android:text="@string/surah_name"
-        android:textColor="@color/grayColor"
+        android:text="@string/surah_name1"
+        android:textColor="@color/primaryColor"
         android:textSize="@dimen/textSize24"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/quran_image"
@@ -125,9 +221,7 @@
 
     <ImageView
         android:id="@+id/ic_fast_backward"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        style="@style/Icons"
         android:contentDescription="@string/previous_surah"
         app:layout_constraintEnd_toStartOf="@+id/ic_15sec_backward"
         app:layout_constraintStart_toEndOf="@+id/surah_name"
@@ -136,15 +230,22 @@
 
     <ImageView
         android:id="@+id/ic_fast_forward"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        style="@style/Icons"
         android:contentDescription="@string/next_surah"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/ic_15sec_forward"
         app:layout_constraintTop_toTopOf="@id/secondaryConstraint"
         app:srcCompat="@drawable/ic_fast_forward"
         tools:layout_editor_absoluteY="38dp" />
+
+    <TextView
+        android:id="@+id/index"
+        style="@style/Index"
+        android:text="@string/index"
+        android:layout_marginTop="@dimen/margin24"
+        app:layout_constraintTop_toTopOf="@id/primaryConstraint"
+        app:layout_constraintEnd_toEndOf="@id/primaryConstraint"
+        tools:layout_editor_absoluteY="16dp" />
 
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
